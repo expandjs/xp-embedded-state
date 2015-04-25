@@ -1,0 +1,69 @@
+<!--
+@license
+Copyright (c) 2015 The expand.js authors. All rights reserved.
+This code may only be used under the BSD style license found at https://expandjs.github.io/LICENSE.txt
+The complete set of authors may be found at https://expandjs.github.io/AUTHORS.txt
+The complete set of contributors may be found at https://expandjs.github.io/CONTRIBUTORS.txt
+-->
+
+<!--
+This component is used to add embed capabilities on the context element.
+It extends the native html `template`.
+
+@component xp-embedded-state
+@description This component is used to add embed capabilities on the context element.
+@extends template
+
+@dependency polymer Polymer/polymer#^0.5
+@dependency expandjs ExpandJS/expandjs
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../expandjs/expandjs.html">
+
+<polymer-element name="xp-embedded-state" extends="template" attributes="context embedded">
+
+    <script>
+        XPComponent({
+
+            // PUBLISH
+            publish: {
+
+                /**
+                 * The context element.
+                 *
+                 * @attribute context
+                 * @type Element
+                 */
+                context: {reflect: false, value: null},
+
+                /**
+                 * If set to true, the element is embedded.
+                 *
+                 * @attribute disabled
+                 * @type boolean
+                 * @default false
+                 */
+                embedded: {reflect: true, value: false}
+            },
+
+            /**
+             * The context element.
+             *
+             * @property context
+             * @type Element
+             * @readonly
+             * @private
+             */
+//            get context() { return this.host || this.parentNode; },
+
+            /*********************************************************************/
+
+            // LISTENER
+            ready: function () {
+                this.embedded = !!window.frameElement;
+            }
+        });
+    </script>
+
+</polymer-element>

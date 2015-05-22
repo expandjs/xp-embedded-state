@@ -1,7 +1,7 @@
 {
   "name": "xp-embedded-state",
   "license": "BSD-3-Clause",
-  "version": "0.8.9",
+  "version": "0.8.10",
   "description": "A custom element able to recognize whether it's inside an iframe or not",
   "homepage": "http://expandjs.com/elements/xp-embedded-state",
   "authors": [

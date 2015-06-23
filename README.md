@@ -1,3 +1,3 @@
 # xp-embedded-state
 
-This repository **is deprected**. Use [`xp-embedded-behavior`](https://github.com/expandjs/xp-embedded-behavior) instead.
+This repository **is deprecated**. Use [`xp-embedded-behavior`](https://github.com/expandjs/xp-embedded-behavior) instead.

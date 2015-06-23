@@ -1,3 +1,3 @@
 # xp-embedded-state
 
-See the [`documentation page`](http://expandjs.com/elements/xp-embedded-state) for more information.
+This repository **is deprected**. Use [`xp-embedded-behavior`](https://github.com/expandjs/xp-embedded-behavior) instead.
